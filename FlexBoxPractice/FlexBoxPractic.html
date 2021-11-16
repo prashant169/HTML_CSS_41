@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRIDGELABZ</title>
+    <style>
+      body {
+        padding: 2em;
+      }
+
+      .headerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background-color: tomato;
+        font-weight: bold;
+        padding: 10px;
+      }
+      .footerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background-color: lightgreen;
+        font-weight: bold;
+        padding: 10px;
+      }
+      .mainContainer {
+        display: flex;
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+      }
+      .mainContainerItem {
+        text-align: left;
+        background: deepskyblue;
+      }
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+      }
+
+      .sideBarLeftItem {
+        background: gold;
+      }
+
+      .sideBarRightItem {
+        background: hotpink;
+      }
+      .sideBarItem {
+        flex: 1 0 0;
+        border: 1px solid green;
+      }
+      .mainContainerItem {
+        flex: 3 0px;
+      }
+      .sideBarLeftItem {
+        order: 1;
+      }
+      .mainContainerItem {
+        order: 2;
+      }
+      .sideBarRightItem {
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="headerContainer">HEADER - SAMPLE FLEXBOX EXAMPLE</header>
+    <div class="mainContainer">
+      <section class="mainContainerItem">
+        <article>
+          <h2>Blockchain</h2>
+          <p>
+            A blockchain is a growing list of records, called blocks, that are
+            linked together using cryptography.[1][2][3][4] Each block contains
+            a cryptographic hash of the previous block, a timestamp, and
+            transaction data (generally represented as a Merkle tree). The
+            timestamp proves that the transaction data existed when the block
+            was published in order to get into its hash. As blocks each contain
+            information about the block previous to it, they form a chain, with
+            each additional block reinforcing the ones before it. Therefore,
+            blockchains are resistant to modification of their data because once
+            recorded, the data in any given block cannot be altered
+            retroactively without altering all subsequent blocks.
+          </p>
+        </article>
+        <article>
+          <h2>Bitcoin</h2>
+          <p>
+            Bitcoin (₿) is a decentralized digital currency, without a central
+            bank or single administrator, that can be sent from user to user on
+            the peer-to-peer bitcoin network without the need for
+            intermediaries. Transactions are verified by network nodes through
+            cryptography and recorded in a public distributed ledger called a
+            blockchain. The cryptocurrency was invented in 2008 by an unknown
+            person or group of people using the name Satoshi Nakamoto. The
+            currency began use in 2009 when its implementation was released as
+            open-source software.
+          </p>
+        </article>
+        <article>
+          <h2>Ethereum</h2>
+          <p>
+            Ethereum is a decentralized, open-source blockchain with smart
+            contract functionality. Ether (ETH or Ξ) is the native
+            cryptocurrency of the platform, which, after Bitcoin, is the largest
+            cryptocurrency by market capitalisation.Ethereum is the most
+            actively used blockchain.
+          </p>
+        </article>
+      </section>
+      <sidebar class="sideBarItem sideBarLeftItem"> left side bar </sidebar>
+      <sidebar class="sideBarItem sideBarRightItem"> right side bar </sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+  </body>
+</html>
